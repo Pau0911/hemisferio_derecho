@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Hemisferio_Derecho_App"

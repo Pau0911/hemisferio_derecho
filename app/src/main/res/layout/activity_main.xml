@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="396dp"
+            android:layout_height="77dp"
+            android:fontFamily="@font/delius_unicase"
+            android:gravity="center|center_horizontal"
+            android:text="EN ESTA APP TÚ ERES EL PROTAGONISTA"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/relative_logo">
+
+        <TextView
+            android:id="@+id/textView_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#040404"
+            android:text="REGÍSTRATE"
+            android:fontFamily="@font/delius_unicase"
+            android:textColor="#000000"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/textView_registro"
+            android:background="@drawable/ic_launcher_background"
+
+            />
+
+
+        <TextView
+            android:id="@+id/textView2_inicio_sesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#040404"
+            android:text="INICIA SESIÓN"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/delius_unicase"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton_inicio_sesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/delius_unicase"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textView2_inicio_sesion"
+            android:background="@drawable/ic_launcher_background" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_options">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/app_texto_inicial"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:fontFamily="@font/delius_unicase"
+
+            android:textSize="16dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
