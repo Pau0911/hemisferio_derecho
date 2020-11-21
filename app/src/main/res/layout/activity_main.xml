@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/fondo">
+    android:background="@drawable/pantalla1">
 
 
 
@@ -47,54 +47,25 @@
         android:layout_marginTop="30dp"
         android:layout_below="@+id/relative_logo">
 
-<!--        <TextView-->
-<!--            android:id="@+id/textView_registro"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:backgroundTint="#040404"-->
-<!--            android:text="REGÍSTRATE"-->
-<!--            android:fontFamily="@font/delius_unicase"-->
-<!--            android:textColor="#000000"-->
-<!--            android:layout_marginLeft="40dp"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:textSize="18sp"-->
-
-<!--            />-->
 
         <ImageButton
             android:id="@+id/imageButton_registro"
             android:layout_width="150dp"
             android:layout_height="200dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/registro"
-
-            />
-
-
-        <TextView
-            android:id="@+id/textView2_inicio_sesion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#040404"
-            android:text="INICIA SESIÓN"
-            android:textSize="18sp"
-            android:layout_marginBottom="10dp"
-            android:textColor="#000000"
-            android:layout_marginRight="30dp"
-            android:fontFamily="@font/delius_unicase"
-            android:layout_alignParentRight="true"
 
             />
 
         <ImageButton
             android:id="@+id/imageButton_inicio_sesion"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:layout_marginRight="20dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="40dp"
             android:fontFamily="@font/delius_unicase"
             android:layout_alignParentRight="true"
-            android:layout_below="@id/textView2_inicio_sesion"
-            android:background="@drawable/ic_launcher_background" />
+            android:background="@drawable/iniciosesion" />
 
     </RelativeLayout>
 
@@ -112,12 +83,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/app_texto_inicial"
-            android:textAlignment="textStart"
-            android:background="@drawable/texto"
-            android:fontFamily="@font/delius_unicase"
-
-            android:textSize="16dp">
+            android:background="@drawable/texto">
 
         </ImageView>
 

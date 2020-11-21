@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioSesionOpciones"
+    android:background="@drawable/opciones">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/inicio_sesion_padre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión como padre:"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="250dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_padre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inicio_sesion_padre"
+            android:hint="Ingrese Usuario"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+        <TextView
+            android:id="@+id/inicio_sesion_peque"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión como peque:"
+            android:textSize="25dp"
+            android:layout_below="@+id/edit_padre"
+            android:textStyle="bold"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_peque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inicio_sesion_peque"
+            android:hint="Ingrese Usuario"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+        <TextView
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Contraseña:"
+            android:textSize="25dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/edit_peque"
+            android:textStyle="bold"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contrasena"
+            android:hint="Ingrese contraseña"
+            android:inputType="textPassword"
+            android:gravity="center"
+
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <ImageButton
+            android:id="@+id/anterior"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/edit_contrasena"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/anterior">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/siguiente"
+            android:layout_width="80dp"
+            android:layout_below="@id/edit_contrasena"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/siguiente"
+            android:layout_marginTop="120dp"
+            >
+
+        </ImageButton>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
