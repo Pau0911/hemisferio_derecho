@@ -53,7 +53,7 @@ public class InicioSesionOpciones extends AppCompatActivity {
     public  void validLogin(){
         getInformation();
         if(!usuarioPeque.isEmpty() && (contrasena.equals("1234"))){
-            //Siguiente pestaña
+
             Intent intent = new Intent(InicioSesionOpciones.this, Bienvenida.class);
             intent.putExtra("nombre",usuarioPeque);
             startActivity(intent);
@@ -62,6 +62,12 @@ public class InicioSesionOpciones extends AppCompatActivity {
             Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
         }
 
+        if(usuarioPeque.isEmpty() || (contrasena.isEmpty())){
+
+            Toast.makeText(this, "Ingrese usuario y contraseña", Toast.LENGTH_SHORT).show();
+
+
+        }
 
     }
 

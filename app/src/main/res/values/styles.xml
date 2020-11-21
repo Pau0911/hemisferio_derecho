@@ -5,7 +5,7 @@
         <item name="colorPrimary">#a5ba51</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-<!--        <item name="android:fontFamily">@font/lightrubik</item>-->
+        <item name="android:fontFamily">@font/trashhand</item>
 
     </style>
 

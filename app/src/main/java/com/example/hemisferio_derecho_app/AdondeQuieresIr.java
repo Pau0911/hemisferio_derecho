@@ -19,7 +19,6 @@ public class AdondeQuieresIr extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adonde_quieres_ir);
         Intent intent = getIntent();
-
         nombre=intent.getStringExtra("nombre");
         text_adonde_quieres_ir= findViewById(R.id.text_adonde_quieres_ir);
         text= nombre+","+" ";
