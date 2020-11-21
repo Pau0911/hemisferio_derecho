@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bienvenida"
+    android:background="@drawable/pfondo"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/munequita">
+
+        <TextView
+            android:id="@+id/text_bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Hola mundo"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_bienvenida2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/text_bienvenida"
+            android:text="¿Ya estás lista para la aventura de hoy?"
+            android:textSize="30dp">
+
+        </TextView>
+
+
+        <ImageButton
+            android:id="@+id/anterior2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/anterior">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/siguiente2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/siguiente"
+            android:layout_marginTop="120dp"
+            >
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
