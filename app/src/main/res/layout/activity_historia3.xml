@@ -4,33 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Historia2"
+    tools:context=".Historia3"
     android:background="@drawable/pfondo">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/historia2"
+        android:background="@drawable/hoja"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="70dp">
 
+
     </RelativeLayout>
 
-
     <TextView
-        android:layout_width="130dp"
-        android:layout_height="40dp"
-        android:layout_alignParentRight="true"
-        android:text="Fantántisco, eres un@ aventuter@"
-        android:layout_marginTop="40dp"
-        android:textColor="#000000"
-        android:textSize="18dp">
-
-    </TextView>
-
-    <TextView
-        android:id="@+id/text_historia2"
+        android:id="@+id/text_historia4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Historia"
@@ -43,27 +32,27 @@
         android:textSize="15dp">
     </TextView>
     <TextView
-        android:id="@+id/text_p1"
-        android:layout_width="match_parent"
+        android:id="@+id/text_p6"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Qué quieres hacer?"
+        android:text="No me gustaría estar en tus zapatos, ¿qué quieres hacer?:"
         android:layout_marginRight="20dp"
-        android:layout_below="@+id/text_historia2"
+        android:layout_below="@+id/text_historia4"
         android:gravity="left"
         android:textColor="#000000"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="50dp"
         android:fontFamily="@font/trashhand"
-        android:textSize="20dp">
+        android:textSize="15dp">
 
     </TextView>
 
     <TextView
-        android:id="@+id/text_pregunta4"
-        android:layout_width="match_parent"
+        android:id="@+id/text_pregunta7"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="¿Qué tal si seguimos al pavo real?, de pronto encontramos algo que te puede sorprender"
+        android:text="¿Confiar en el mono y atreverse a subir por la liana?"
         android:layout_marginRight="20dp"
-        android:layout_below="@+id/text_p1"
+        android:layout_below="@+id/text_p6"
         android:gravity="left"
         android:fontFamily="@font/trashhand"
         android:textColor="#000000"
@@ -78,42 +67,40 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/librito"
-        android:layout_below="@+id/text_pregunta4"
+        android:layout_below="@+id/text_pregunta7"
         android:layout_marginTop="5dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="40dp">
     </ImageView>
 
     <TextView
-        android:id="@+id/text_pregunta5"
-        android:layout_width="match_parent"
+        android:id="@+id/text_pregunta8"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="O ¿quieres explorar el lugar por tu cuenta?"
-        android:layout_marginRight="20dp"
-        android:layout_below="@+id/librito"
-        android:gravity="left"
+        android:text="¿Intentarías pisar los pies de las rocas?"
+        android:layout_marginRight="23dp"
+        android:layout_below="@+id/text_p6"
+        android:layout_alignParentRight="true"
         android:fontFamily="@font/trashhand"
         android:textColor="#000000"
-        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
         android:textSize="15dp">
 
     </TextView>
 
     <ImageView
-        android:id="@+id/librito2"
+        android:id="@+id/librito23"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginRight="30dp"
         android:background="@drawable/librito"
-        android:layout_below="@+id/text_pregunta5"
+        android:layout_below="@+id/text_pregunta8"
         android:layout_marginTop="5dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_marginLeft="40dp">
     </ImageView>
-
-
     <ImageButton
-        android:id="@+id/anterior4"
+        android:id="@+id/anterior5"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
@@ -122,8 +109,9 @@
         android:background="@drawable/anterior">
     </ImageButton>
 
+
     <ImageButton
-        android:id="@+id/home_h2"
+        android:id="@+id/home_h3"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
@@ -133,6 +121,8 @@
         android:background="@drawable/home">
 
     </ImageButton>
+
+
 
 
 </RelativeLayout>
