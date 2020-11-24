@@ -13,7 +13,7 @@ public class Historia2 extends AppCompatActivity {
 
     String historia,nombre;
     TextView historia2;
-    ImageView imageView_anterior,home,librito;
+    ImageView imageView_anterior,home,baulsito;
 
 
     @Override
@@ -22,6 +22,7 @@ public class Historia2 extends AppCompatActivity {
         setContentView(R.layout.activity_historia2);
         home = findViewById(R.id.home_h2);
         imageView_anterior=findViewById(R.id.anterior4);
+        baulsito= findViewById(R.id.baulsito);
         Intent intent = getIntent();
 
         nombre=intent.getStringExtra("nombre");
@@ -54,6 +55,14 @@ public class Historia2 extends AppCompatActivity {
         });
         historia2.setText(historia);
 
+        baulsito.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(Historia2.this,Historia3.class);
+                intent1.putExtra("nombre",nombre);
+                startActivity(intent1);
+            }
+        });
 
     }
 

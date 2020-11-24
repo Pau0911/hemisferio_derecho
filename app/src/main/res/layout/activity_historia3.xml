@@ -11,13 +11,31 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/hoja"
+        android:background="@drawable/pantep"
         android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginBottom="70dp">
 
 
     </RelativeLayout>
 
+
+
+    <TextView
+        android:id="@+id/text_pregunta_h"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Buena decisión, yo tampoco confiaría en algo con tantas plumas."
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:fontFamily="@font/trashhand"
+        android:textColor="#000000"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="230dp"
+        android:textSize="15dp">
+
+    </TextView>
     <TextView
         android:id="@+id/text_historia4"
         android:layout_width="match_parent"
@@ -27,8 +45,9 @@
         android:layout_marginRight="10dp"
         android:fontFamily="@font/trashhand"
         android:textColor="#000000"
+        android:layout_below="@+id/text_pregunta_h"
         android:gravity="center_horizontal"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="30dp"
         android:textSize="15dp">
     </TextView>
     <TextView
@@ -63,12 +82,12 @@
     </TextView>
 
     <ImageView
-        android:id="@+id/librito"
+        android:id="@+id/escalando"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@drawable/librito"
+        android:background="@drawable/escalando"
         android:layout_below="@+id/text_pregunta7"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="40dp">
     </ImageView>
@@ -89,13 +108,13 @@
     </TextView>
 
     <ImageView
-        android:id="@+id/librito23"
+        android:id="@+id/piedrita"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginRight="30dp"
-        android:background="@drawable/librito"
+        android:background="@drawable/piedrita"
         android:layout_below="@+id/text_pregunta8"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="40dp">
     </ImageView>

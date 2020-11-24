@@ -4,13 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Historia3 extends AppCompatActivity {
 
 
     TextView text_historia4;
-
+    ImageView escalando,home,anterior;
     String historia,nombre;
 
     @Override
@@ -19,8 +21,11 @@ public class Historia3 extends AppCompatActivity {
         setContentView(R.layout.activity_historia3);
         Intent intent = getIntent();
 
+        home= findViewById(R.id.home_h3);
+        anterior= findViewById(R.id.anterior5);
         nombre=intent.getStringExtra("nombre");
         text_historia4= findViewById(R.id.text_historia4);
+        escalando= findViewById(R.id.escalando);
         historia="A " +" "+
                 nombre +" "+
                 "no le daba buena espina esa ave tan orgullosa y pensó que sería mejor explorar el bosque por su cuenta, " +
@@ -39,6 +44,29 @@ public class Historia3 extends AppCompatActivity {
 
         text_historia4.setText(historia);
 
+        escalando.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(Historia3.this,Historia4.class);
+                intent1.putExtra("nombre",nombre);
+                startActivity(intent1);
+            }
+        });
 
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(Historia3.this,MainActivity.class);
+                startActivity(intent1);
+
+            }
+        });
+
+        anterior.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 }

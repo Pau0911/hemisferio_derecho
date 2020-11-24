@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Historia4"
+    android:background="@drawable/pfondo"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pfinal"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="70dp">
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text_historia5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historia"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/trashhand"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp">
+    </TextView>
+
+
+
+
+    <ImageButton
+        android:id="@+id/anterior6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/anterior">
+    </ImageButton>
+
+
+    <ImageButton
+        android:id="@+id/home_h4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/home">
+
+    </ImageButton>
+</RelativeLayout>
