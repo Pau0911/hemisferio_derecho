@@ -7,9 +7,7 @@
     tools:context=".Historia"
     android:background="@drawable/pfondo">
 
-
     <RelativeLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
@@ -17,19 +15,27 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/pavito">
+    </RelativeLayout>
 
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <TextView
             android:id="@+id/text_historia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Historia"
-            android:fontFamily="@font/trashhand"
+            android:fontFamily="@font/gillsansmtbold"
             android:textColor="#000000"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:gravity="center_horizontal"
             android:layout_marginTop="180dp"
-            android:textSize="18dp">
+            android:textSize="20dp">
 
         </TextView>
 
@@ -42,7 +48,7 @@
             android:layout_below="@+id/text_historia"
             android:gravity="right"
             android:textColor="#000000"
-            android:fontFamily="@font/trashhand"
+            android:fontFamily="@font/gillsansmtbold"
             android:textSize="20dp">
 
         </TextView>
@@ -55,7 +61,7 @@
             android:layout_marginRight="20dp"
             android:layout_below="@+id/text_p1"
             android:gravity="right"
-            android:fontFamily="@font/trashhand"
+            android:fontFamily="@font/gillsansmtbold"
             android:textColor="#000000"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
@@ -81,7 +87,7 @@
             android:layout_marginRight="20dp"
             android:layout_below="@+id/librito"
             android:gravity="right"
-            android:fontFamily="@font/trashhand"
+            android:fontFamily="@font/gillsansmtbold"
             android:textColor="#000000"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="10dp"
@@ -89,40 +95,41 @@
 
         </TextView>
 
+
         <ImageView
             android:id="@+id/save_librito"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/savelibro"
             android:layout_below="@+id/text_p3"
-            android:layout_marginTop="5dp"
+            android:layout_marginBottom="80dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp">
         </ImageView>
+        </RelativeLayout>
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/anterior3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/anterior">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/home_h"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/home">
+
+        </ImageButton>
+
 
     </RelativeLayout>
 
-    <ImageButton
-        android:id="@+id/anterior3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/anterior">
-    </ImageButton>
 
-    <ImageButton
-        android:id="@+id/home_h"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="120dp"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/home">
-
-    </ImageButton>
-
-
-</RelativeLayout>

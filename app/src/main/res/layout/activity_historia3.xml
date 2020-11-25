@@ -8,32 +8,40 @@
     android:background="@drawable/pfondo">
 
 
-    <RelativeLayout
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/pantep"
+        android:background="@drawable/fonfoante"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="70dp">
 
+    </androidx.appcompat.widget.AppCompatImageView>
 
-    </RelativeLayout>
 
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
     <TextView
         android:id="@+id/text_pregunta_h"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Buena decisión, yo tampoco confiaría en algo con tantas plumas."
         android:layout_marginRight="20dp"
         android:gravity="left"
-        android:fontFamily="@font/trashhand"
+        android:fontFamily="@font/gillsansmtbold"
         android:textColor="#000000"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="230dp"
-        android:textSize="15dp">
+        android:textSize="19dp">
 
     </TextView>
     <TextView
@@ -43,25 +51,26 @@
         android:text="Historia"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:fontFamily="@font/trashhand"
+        android:fontFamily="@font/gillsansmtbold"
         android:textColor="#000000"
         android:layout_below="@+id/text_pregunta_h"
         android:gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:textSize="15dp">
+        android:textSize="20dp">
     </TextView>
     <TextView
         android:id="@+id/text_p6"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No me gustaría estar en tus zapatos, ¿qué quieres hacer?:"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:layout_below="@+id/text_historia4"
         android:gravity="left"
         android:textColor="#000000"
-        android:layout_marginLeft="50dp"
-        android:fontFamily="@font/trashhand"
-        android:textSize="15dp">
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/gillsansmtbold"
+        android:textSize="17dp">
 
     </TextView>
 
@@ -73,11 +82,11 @@
         android:layout_marginRight="20dp"
         android:layout_below="@+id/text_p6"
         android:gravity="left"
-        android:fontFamily="@font/trashhand"
+        android:fontFamily="@font/gillsansmtbold"
         android:textColor="#000000"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:textSize="15dp">
+        android:textSize="17dp">
 
     </TextView>
 
@@ -88,6 +97,7 @@
         android:background="@drawable/escalando"
         android:layout_below="@+id/text_pregunta7"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="40dp">
     </ImageView>
@@ -100,10 +110,10 @@
         android:layout_marginRight="23dp"
         android:layout_below="@+id/text_p6"
         android:layout_alignParentRight="true"
-        android:fontFamily="@font/trashhand"
+        android:fontFamily="@font/gillsansmtbold"
         android:textColor="#000000"
         android:layout_marginTop="20dp"
-        android:textSize="15dp">
+        android:textSize="17dp">
 
     </TextView>
 
@@ -118,6 +128,10 @@
         android:layout_alignParentRight="true"
         android:layout_marginLeft="40dp">
     </ImageView>
+        </RelativeLayout>
+    </ScrollView>
+
+
     <ImageButton
         android:id="@+id/anterior5"
         android:layout_width="70dp"

@@ -8,9 +8,13 @@
     android:background="@drawable/pfondo"
     >
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="600dp"
         android:layout_margin="20dp"
         android:background="@drawable/munequita">
 
@@ -43,14 +47,14 @@
 
         </TextView>
 
-
+    </RelativeLayout>
+    </ScrollView>
         <ImageButton
             android:id="@+id/anterior2"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="120dp"
             android:background="@drawable/anterior">
 
         </ImageButton>
@@ -63,12 +67,11 @@
             android:layout_marginRight="20dp"
             android:layout_alignParentRight="true"
             android:background="@drawable/siguiente"
-            android:layout_marginTop="120dp"
             >
 
         </ImageButton>
 
-    </RelativeLayout>
+
 
 
 

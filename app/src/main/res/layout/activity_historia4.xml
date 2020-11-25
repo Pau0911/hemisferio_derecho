@@ -8,18 +8,24 @@
     android:background="@drawable/pfondo"
     >
 
-    <RelativeLayout
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/pfinal"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="70dp">
+        android:layout_height="wrap_content"
+        android:src="@drawable/fonfinal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+    </androidx.appcompat.widget.AppCompatImageView>
 
-
-    </RelativeLayout>
-
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/text_historia5"
@@ -28,15 +34,14 @@
         android:text="Historia"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:fontFamily="@font/trashhand"
+        android:fontFamily="@font/gillsansmtbold"
         android:textColor="#000000"
         android:gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:textSize="15dp">
+        android:layout_marginTop="50dp"
+        android:textSize="20dp">
     </TextView>
-
-
-
+        </RelativeLayout>
+    </ScrollView>
 
     <ImageButton
         android:id="@+id/anterior6"
@@ -60,4 +65,5 @@
         android:background="@drawable/home">
 
     </ImageButton>
+
 </RelativeLayout>
